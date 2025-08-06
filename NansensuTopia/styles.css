@@ -1,0 +1,102 @@
+/*Esta es mi página de estilos súper chula*/
+
+/*MEDIA QUERIES PARA DISEÑO ADAPTATIVO*/
+
+@media screen and (max-width: 400px) {
+    h2 {font-size: small;}
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: 'miFuente';
+    src: url('NataSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: miSansFuente;
+    src: url(GoogleSansCode-Regular.ttf);
+}
+
+* {
+    font: 20px 'miFuente';
+}
+
+body {
+    margin: auto;
+    padding: 5%;
+}
+
+p {
+    font: 20px;
+}
+
+h1 {
+    font: bold 40px 'miFuente';
+}
+
+h2 {
+    font: bold 30px 'miFuente';
+    color: rgb(48, 152, 152);
+}
+
+.inLink {color: rgb(203, 4, 4);}
+
+.outLink {color: rgb(48, 152, 152);}
+
+pre {
+    font: 'miSansFuente';
+}
+
+h2+p {
+    color: rgb(244, 99, 30);
+    font-weight: bold;
+}
+
+h1 em {
+    font-style: italic;
+    font-size: inherit;
+}
+
+h2 em {
+    font-style: italic;
+    font-size: inherit;
+}
+
+.calloutTip {
+    background: linear-gradient(to bottom, rgba(48, 152, 152, 0.5) 0%, rgba(255, 159, 0, 0.5) 100%);
+    padding: 2em;
+}
+
+.calloutWarning {
+    background: linear-gradient(to left, rgba(255, 159, 0, 0.5) 0%, rgba(203, 4, 4, 0.5) 100%);
+    padding: 2em;
+}
+
+a:link {
+    color: rgb(48, 152, 152);
+}
+
+a:visited {
+    color: rgb(244, 99, 30);
+}
+
+a:hover {
+    color: rgba(244, 99, 30, 0.7);
+}
+
+a:active {
+    color: rgba(48, 152, 152, 0.7);
+}
+
+/*Estilos para los flexbox*/
+.container {
+    display: flex;
+    /*flex-direction: row-reverse;
+    /*flex-wrap: wrap; /*Por defecto es nowrap*/
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: stretch;
+    column-gap: 0.2em;
+    row-gap: 0.4em;
+}

@@ -1,0 +1,28 @@
+/*FUENTES*/
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#titulo {
+    text-align: center;
+    font-family: "Permanent Marker";
+    font-size: 80px;
+    color: rgb(114, 35, 35);
+/*  color: linear-gradient(bottom, rgb(114, 35, 35), rgb(186, 72, 127));
+    color: -webkit-linear-gradient(bottom, rgb(114, 35, 35), rgb(186, 72, 127));
+    color: -ms-linear-gradient(bottom, rgb(114, 35, 35) 0%, rgb(186, 72, 127) 100%);
+    color: -o-linear-gradient(bottom, rgb(114, 35, 35), rgb(186, 72, 127));*/ /*Parece que no pueden hacerse gradientes en textos.*/
+    margin: 40px;
+}
+
+.imagen {
+    width: 400px;
+    padding: 4px;
+    border: 2px solid rgb(186, 72, 127);
+    border-radius: 5px;
+    float: left;
+    margin: 100px 20px 100px;
+}

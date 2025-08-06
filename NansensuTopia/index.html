@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Página de prueba"/>
+        <meta name="Keywords" content="HTML, CSS, Javascript"/>
+        <title>Web de prueba</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1><em>Nansensu</em>Topia</h1>
+        <p>Esta es una página web de prueba.</p>
+
+        <pre>
+            Esto es un texto preformateado.
+
+
+
+            El navegador dibuja el texto tal y como lo he escrito, incluso con tropecientos saltos de línea.
+        </pre>
+
+        <h2><em>Nansensu</em></h2>
+
+        <p>
+            Si pulso <a class="inLink" href="#interesting-section">aquí</a>:
+        </p>
+
+        <p>
+            En medio puedo poner mucho texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+            Incluso puedo poner un enlace super chulo a otro sitio, por ejemplo, a la entrada de Wikipedia sobre el <a class="outLink" href="https://en.wikipedia.org/wiki/Chayote" title="Wikipedia - Chayote" target="_blank">chayote</a> en una ventana aparte.
+        </p>
+
+        <a class="outLink" href="https://es.wikipedia.org/wiki/Picidae" title="Wikipedia - Pájaro carpintero" target="_blank">
+            <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/234655651/1800" alt="No se encuentra la imagen" title="Un pájaro carpintero" width="800">
+        </a>
+
+        <h2>Una tabla to guapa</h2>
+
+        <table border="1px">
+            <caption>Una tabla sin mucho sentido.</caption>
+            <tr>
+                <th scope="col">Pito</th>
+                <th scope="col">gorgorito</th>
+                <td rowspan="3">¿Dónde vas tú tan bonito?</td>
+            </tr>
+            <tr>
+                <td>Pito</td>
+                <td>gorgorito</td>
+            </tr>
+            <tr>
+                <td colspan="2">Pititi</td>
+            </tr>
+        </table><br><br>
+
+        <img src="img/pajaro-carpintero.jpg" alt="No se encontró la imagen." title="El mismo pájaro carpintero, pero este está en mi disco duro." width="800">
+
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/La_campi%C3%B1a_romana%2C1639%2C_Claude_Lorrain.jpg" alt="Imagen no encontrada" title="La campiña romana" width="800">
+            <figcaption>Un cuadro mu chulo de la campiña romana.</figcaption>
+        </figure>
+
+        <video id="car-video" controls loop autoplay>
+            <source src="img/car-vid.mp4">
+        </video>
+
+        <h2>Un vídeo de YouTube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7ieLQuu7XoQ?si=otZFrI8XTHaxNK_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <a id="interesting-section">
+            <p>
+                ... me lleva a esta sección tan interesante.
+            </p>
+        </a>
+
+        <h2>Un formulario muy divertido</h2>
+
+        <!--Este es un formulario cuyos datos no van a ninguna parte. How useful! How technology!-->
+        <form action="" method="post" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="off"></form>
+
+        <input type="text" name="mi-nombre" id="etiqueta-text" placeholder="Nombre" required>
+        <input type="submit" value="Aceptar"><br>
+
+        <input type="number" name="mi-edad" id="etiqueta-edad" placeholder="Edad: 3.724 años">
+        <input type="submit" value="Aceptar"><br><br>
+
+        <input type="textarea" name="mi-dirección" id="etiqueta-address" placeholder="Dirección: Calle Belcebú 36 66666, Tercer Círculo, Infierno" required>
+        <input type="submit" value="Enviar"><br>
+
+        <input type="tel" name="mi-tel" id="etiqueta-tel" placeholder="Tlf: 666666666">
+        <input type="submit" value="Enviar"><br><br>
+
+        <p>¿Cómo de satisfecho está con su vida en el infierno?</p>
+        <input type="range" name="mi-satisfaction" id="etiqueta-satifaction"><br><br>
+
+        <p>¿Hasta cuándo desea vivir en el infierno?</p>
+        <input type="date">
+        <input type="submit" value="Enviar"><br><br>
+
+        <h2>Y esto es un iframe vacío</h2>
+
+        <iframe src="iframe.html" frameborder="0" height="200" width="300" title="EjIframe"></iframe>
+
+        <h2>Y esto es un flexbox</h2>
+
+        <!--Esto es un flexbox-->
+        <div class="container">
+            <!--Item 1: Un consejo-->
+            <div class="item">
+                <div class="calloutTip">
+                    Esto es un consejo que tiene como fondo un degradado muy chulo.
+                </div>
+            </div>
+            <div class="item">
+                <div class="calloutWarning">
+                    Esto es una advertencia.
+                </div>
+            </div>
+            <div class="item">
+                <div class="calloutTip">
+                    Esto es otro consejo.
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
